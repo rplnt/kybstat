@@ -11,6 +11,6 @@ dumpnode = ''
 add_time = 1
 
 try:
-	from private_settings import *
+    from private_settings import *
 except ImportError:
-	pass
+    pass
