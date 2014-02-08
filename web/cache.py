@@ -9,7 +9,7 @@ class Cache(object):
         self.age = defaultdict(int)
 
     def __contains__(self, key):
-    	return key in self.cache
+        return key in self.cache
 
     def __getitem__(self, key):
         self._update_age(key)
@@ -21,7 +21,7 @@ class Cache(object):
         self.cache[key] = value
 
     def __delitem__(self, key):
-    	del self.cache[key]
+        del self.cache[key]
         del self.age[key]
 
     def __iter__(self):
